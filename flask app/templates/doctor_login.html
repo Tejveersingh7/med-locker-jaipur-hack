@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Doctor_login</title>
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/style_doctor_login.css')}}">
+</head>
+<body>
+   <div class="container">
+     <form action="{{ url_for('doctor_login') }}" method="POST">
+         <div class="title">Doctor Login</div>
+         <div class="input-box underline">
+          
+           <input type="text" placeholder="Aadhar Number" required name="doc_aadhar">
+           <div class="underline">
+           </div>
+         </div>
+         
+         <div class="input-box">
+           <input type="password" placeholder="Enter Your Password" required name="doc_password">
+           <div class="underline"></div>
+         
+         </div>
+         <div class="input-box button">
+           <input type="submit" name value="Continue">
+         </div>
+      
+      </form>
+
+
+</div>
+
+</body>
+</html>

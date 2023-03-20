@@ -1,0 +1,36 @@
+h1{
+	text-align: center;
+}
+
+body{
+     background-image: url(/static/images/loginpage.jpg); 
+    background-size: 100% 770px;
+    background-repeat: no-repeat;
+   /* background-color: plum; */
+}
+.button {
+    background-color: #344141 ;
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    margin-left: 370px;
+    margin-top: 124px;
+    border-radius: 10%;
+}
+.submit{
+    border: none;
+    border-radius: 10%;
+    font-size: 15px;
+    height: 75px;
+    outline: none;
+    width: 20%;
+    color: #ffffff;
+    background:#344141 ; 
+    margin-left: 600px;
+    margin-top: 174px;  
+} 
