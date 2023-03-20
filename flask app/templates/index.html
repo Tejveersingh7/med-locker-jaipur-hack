@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <title>MED-LOCKER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style_homepage.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>MED-<span>LOCKER</span></h5>
+            </div>
+            <ul class="menu">
+                <!-- <li><a href="#">HOME</a></li> -->
+                <li><a href="/register">REGISTER</a></li>
+               
+                <li><a href="/temp_doctor_login">DOC LOGIN</a></li>
+                <li><a href="/patientloginform">PATIENT LOGIN</a></li>
+                <li><a href="/medicine_query">MEDICINE QUERY</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner" style="background-image: url('/static/images/copy-space-stethoscope-pills.jpg')">
+        <div class="wrapper">
+            <div class="content" style="margin-top: 295px">
+                <div class="content">
+                    <b>What we provide ?</b>
+                    <p>You can search your medicine requirement using the MEDICINE QUERY option. It will tell you the no. of medicines we have in stock</p>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        const sidenav = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        sidenav();
+    </script>
+</body>
+</html>
